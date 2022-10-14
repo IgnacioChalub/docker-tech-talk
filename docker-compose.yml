@@ -4,7 +4,9 @@ services:
   app:
     build: . 
     ports:
-      - "3000:3000"
+      - "4000:4000"
+    environment:
+      - PORT=4000
   db:
     image: postgres:14.1-alpine
     restart: always
